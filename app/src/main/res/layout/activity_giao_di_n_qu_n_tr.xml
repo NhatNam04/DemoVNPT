@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="giaoDiNQuNTrVM" type="com.demovnpt.app.modules.giaodinquntr.data.viewmodel.GiaoDiNQuNTrVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearColumnellipsetwo"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <LinearLayout android:id="@+id/linearGiaoDinQun"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylewhite_A700">
+            <FrameLayout android:id="@+id/frameStackellipsetwo"
+                android:layout_gravity="start"
+                android:layout_height="@dimen/_172pxv"
+                android:layout_marginEnd="@dimen/_10pxh" android:layout_width="@dimen/_289pxh">
+                <ImageView android:id="@+id/imageEllipseTwo"
+                    android:layout_gravity="top|start"
+                    android:layout_height="@dimen/_158pxh"
+                    android:layout_marginBottom="@dimen/_10pxv"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_width="@dimen/_106pxh"
+                    android:scaleType="fitXY"
+                    imageRes="@{@drawable/img_ellipse2_3}"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_ellipse2_3"/>
+                <ImageView android:id="@+id/imageEllipseOne"
+                    android:layout_gravity="top|start"
+                    android:layout_height="@dimen/_95pxh"
+                    android:layout_marginBottom="@dimen/_10pxv"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_width="@dimen/_200pxh"
+                    android:scaleType="fitXY"
+                    imageRes="@{@drawable/img_ellipse1_3}"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_ellipse1_3"/>
+                <ImageView android:id="@+id/imageRectangleSeven"
+                    android:layout_gravity="bottom|end"
+                    android:layout_height="@dimen/_150pxh"
+                    android:layout_marginStart="@dimen/_10pxh"
+                    android:layout_marginTop="@dimen/_10pxv"
+                    android:layout_width="@dimen/_150pxh"
+                    android:scaleType="fitXY"
+                    imageRes="@{@drawable/img_rectangle7}"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle7"/>
+            </FrameLayout>
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearInfo"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_24pxh"
+                android:layout_marginStart="@dimen/_30pxh"
+                android:layout_marginTop="@dimen/_14pxv"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <LinearLayout android:gravity="start"
+                    android:id="@+id/linearColumntnquntrvi"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_7pxv"
+                    android:layout_weight="0.96"
+                    android:layout_width="0dp" android:orientation="vertical">
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtTnQunTrVi"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{giaoDiNQuNTrVM.giaoDiNQuNTrModel.txtTnQunTrVi}"
+                        style="@style/txtAnekLatinregular16" tools:text="@string/msg_t_n_qu_n_tr_vi"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtMHRMVNP0052"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:layout_marginTop="@dimen/_11pxv"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        android:text="@{giaoDiNQuNTrVM.giaoDiNQuNTrModel.txtMHRMVNP0052}"
+                        style="@style/txtAnekLatinregular16" tools:text="@string/msg_m_hrm_vnp0052"/>
+                </LinearLayout>
+                <ImageView android:id="@+id/imageMorehorizontal"
+                    android:layout_height="@dimen/_2pxh"
+                    android:layout_marginBottom="@dimen/_41pxv"
+                    android:layout_marginEnd="@dimen/_4pxh"
+                    android:layout_marginTop="@dimen/_11pxv"
+                    android:layout_width="@dimen/_16pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_morehorizontal"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_morehorizontal"/>
+            </LinearLayout>
+            <androidx.appcompat.widget.AppCompatButton
+                android:ellipsize="end" android:gravity="center"
+                android:id="@+id/btnXemQunLBnHng"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_30pxh"
+                android:layout_marginStart="@dimen/_30pxh"
+                android:layout_marginTop="@dimen/_45pxv"
+                android:layout_width="match_parent"
+                android:paddingHorizontal="@dimen/_30pxh"
+                android:paddingVertical="@dimen/_30pxv"
+                android:singleLine="true"
+                android:text="@string/msg_xem_qu_n_l_b_n"
+                android:textAllCaps="false"
+                style="@style/btnSolidRounded_1" tools:text="@string/msg_xem_qu_n_l_b_n"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:ellipsize="end" android:gravity="center"
+                android:id="@+id/btnNhpQunLBnHng"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_28pxh"
+                android:layout_marginStart="@dimen/_30pxh"
+                android:layout_marginTop="@dimen/_22pxv"
+                android:layout_width="match_parent"
+                android:paddingHorizontal="@dimen/_30pxh"
+                android:paddingVertical="@dimen/_30pxv"
+                android:singleLine="true"
+                android:text="@string/msg_nh_p_qu_n_l_b"
+                android:textAllCaps="false"
+                style="@style/btnSolidRounded_1" tools:text="@string/msg_nh_p_qu_n_l_b"/>
+            <FrameLayout android:id="@+id/frameStackellipsefour"
+                android:layout_gravity="end"
+                android:layout_height="@dimen/_286pxv"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_205pxv" android:layout_width="@dimen/_172pxh">
+                <ImageView android:id="@+id/imageEllipseFour"
+                    android:layout_gravity="top|end"
+                    android:layout_height="@dimen/_200pxh"
+                    android:layout_marginBottom="@dimen/_10pxv"
+                    android:layout_marginStart="@dimen/_10pxh"
+                    android:layout_width="@dimen/_86pxh"
+                    android:scaleType="fitXY"
+                    imageRes="@{@drawable/img_ellipse4_3}"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_ellipse4_3"/>
+                <ImageView android:id="@+id/imageEllipseThree"
+                    android:layout_gravity="bottom|start"
+                    android:layout_height="@dimen/_200pxv"
+                    android:layout_marginTop="@dimen/_10pxv"
+                    android:layout_width="match_parent"
+                    android:scaleType="fitXY"
+                    imageRes="@{@drawable/img_ellipse3_3}"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_ellipse3_3"/>
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+</layout>
